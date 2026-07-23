@@ -207,6 +207,32 @@ section{position:relative}
 .wm-node.n3{animation-delay:1.95s}
 @keyframes wmnode{0%,4%{filter:none}9%{filter:drop-shadow(0 0 7px var(--lime-glow))}24%,100%{filter:none}}
 .wm-dot{fill:var(--lime);filter:drop-shadow(0 0 6px var(--lime))}
+.wm-dot.alt{fill:#eaffc2}
+.web-mock{border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#0f1116}
+.web-bar{height:15px;background:#181b21;display:flex;align-items:center;gap:4px;padding:0 7px;border-bottom:1px solid var(--line)}
+.web-bar span{width:5px;height:5px;border-radius:50%;background:var(--faint)}
+.web-screen{position:relative;height:63px}
+.web-before,.web-after{position:absolute;inset:0;padding:9px;display:flex;flex-direction:column;gap:5px}
+.web-before i{display:block;height:7px;border-radius:2px;background:#2a2e35}
+.web-before i:nth-child(1){width:70%}.web-before i:nth-child(2){width:92%}.web-before i:nth-child(3){width:50%}.web-before i:nth-child(4){width:80%}
+.web-after{background:linear-gradient(180deg,#0f141a,#0f1116);clip-path:inset(0 100% 0 0);animation:webwipe 4.4s ease-in-out infinite}
+.web-after b{display:block}
+.web-after .wh{height:11px;width:46%;border-radius:3px;background:var(--lime)}
+.web-after .wr{height:6px;width:82%;border-radius:2px;background:#3a3f47}
+.web-after .wr.short{width:58%}
+.web-after .wbtn{height:10px;width:36%;border-radius:5px;background:var(--lime);margin-top:3px;box-shadow:0 4px 14px -4px var(--lime-glow)}
+@keyframes webwipe{0%,10%{clip-path:inset(0 100% 0 0)}46%,60%{clip-path:inset(0 0 0 0)}94%,100%{clip-path:inset(0 100% 0 0)}}
+.photo-mock{position:relative;height:80px;border-radius:8px;overflow:hidden;border:1px solid var(--line-2)}
+.photo-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph-before{filter:grayscale(.65) brightness(.55) contrast(.95)}
+.ph-after{clip-path:inset(0 100% 0 0);animation:phwipe 4.5s ease-in-out infinite;filter:contrast(1.06) saturate(1.06)}
+@keyframes phwipe{0%,12%{clip-path:inset(0 100% 0 0)}48%,62%{clip-path:inset(0 0 0 0)}96%,100%{clip-path:inset(0 100% 0 0)}}
+.ph-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0;animation:phscan 4.5s ease-in-out infinite}
+@keyframes phscan{0%,12%{left:0;opacity:0}15%{opacity:1}48%{left:calc(100% - 2px);opacity:1}52%,100%{opacity:0}}
+.ph-tag{position:absolute;bottom:6px;font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(10,11,13,.7)}
+.ph-tag-b{left:6px;color:var(--muted)}
+.ph-tag-a{right:6px;color:var(--lime);opacity:0;animation:phtag 4.5s ease-in-out infinite}
+@keyframes phtag{0%,45%{opacity:0}55%,90%{opacity:1}96%,100%{opacity:0}}
 
 /* trabajos */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -430,19 +456,44 @@ section{position:relative}
       </article>
       <article class="svc">
         <div class="svc-idx">02</div>
-        <div class="svc-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18M7 6.5h.01M9.5 6.5h.01"/></svg></div>
+        <div class="svc-anim" aria-hidden="true">
+          <div class="web-mock">
+            <div class="web-bar"><span></span><span></span><span></span></div>
+            <div class="web-screen">
+              <div class="web-before"><i></i><i></i><i></i><i></i></div>
+              <div class="web-after"><b class="wh"></b><b class="wr"></b><b class="wr short"></b><b class="wbtn"></b></div>
+            </div>
+          </div>
+        </div>
         <h3 data-i18n="serv2_h">Webs y tiendas</h3>
         <p data-i18n="serv2_p">Sitios y tiendas online rápidos, hechos para vender y fáciles de administrar por ti mismo.</p>
       </article>
       <article class="svc">
         <div class="svc-idx">03</div>
-        <div class="svc-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7 4.5 11.5 9 16M15 7l4.5 4.5L15 16"/><path d="M13.5 5.5 10.5 18"/></svg></div>
+        <div class="svc-anim" aria-hidden="true">
+          <svg class="flow-mini" viewBox="0 0 240 84" role="img" aria-label="Integración: Claude y Shopify conectados">
+            <path class="wm-base" d="M52 42 H188"/>
+            <path class="wm-flow" d="M52 42 H188"/>
+            <g class="wm-node n1"><rect x="6" y="24" width="46" height="36" rx="10"/><g transform="translate(21,34)"><path class="core" d="M8 0 C9 4.5 11.5 7 16 8 C11.5 9 9 11.5 8 16 C7 11.5 4.5 9 0 8 C4.5 7 7 4.5 8 0 Z"/></g></g>
+            <g class="wm-node n3"><rect x="188" y="24" width="46" height="36" rx="10"/><g transform="translate(200,33)" fill="none" stroke="#B9FF3D" stroke-width="1.6" stroke-linejoin="round"><path d="M2 5 h12 l-1.2 12 h-9.6 Z"/><path d="M4.5 5 v-1.5 a3.5 3.5 0 0 1 7 0 v1.5"/></g></g>
+            <circle class="wm-dot" r="3.5"><animateMotion dur="1.8s" repeatCount="indefinite" path="M52 42 H188"/></circle>
+            <circle class="wm-dot alt" r="3.5"><animateMotion dur="1.8s" begin="0.9s" repeatCount="indefinite" path="M188 42 H52"/></circle>
+          </svg>
+        </div>
         <h3 data-i18n="serv3_h">Integración de APIs</h3>
         <p data-i18n="serv3_p">Conecto tu ERP, tu tienda y tus apps para que todo hable entre sí sin copiar y pegar.</p>
       </article>
       <article class="svc">
         <div class="svc-idx">04</div>
-        <div class="svc-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.5" cy="10" r="1.6"/><path d="M3 16.5 9 11l4 3.5 3-2.5 5 4.5"/></svg></div>
+        <div class="svc-anim" aria-hidden="true">
+          <div class="photo-mock">
+            <img class="ph-before" src="assets/demo-before.jpg" alt="">
+            <img class="ph-after" src="assets/demo-after.png" alt="">
+            <span class="ph-scan"></span>
+            <span class="ph-tag ph-tag-b">Antes</span>
+            <span class="ph-tag ph-tag-a">Después</span>
+          </div>
+        </div>
         <h3 data-i18n="serv4_h">Fotos de producto con IA</h3>
         <p data-i18n="serv4_p">Imágenes de catálogo profesionales generadas a partir de tus propias fotos, a escala.</p>
       </article>
