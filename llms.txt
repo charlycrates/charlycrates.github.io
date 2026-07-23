@@ -1,12 +1,16 @@
 # Charly — Carlos Rosas
 
-> Freelancer en Santiago de Chile que construye soluciones con IA para pymes. Trabajas directo con él (no es una agencia). Idiomas: español e inglés. Trabajo 100% remoto, en Chile y el resto del mundo.
+> Freelancer en Santiago de Chile que construye soluciones con IA para pymes. Especialidad: automatización con IA (n8n) y **chatbots de WhatsApp**. Trabajas directo con él (no es una agencia). Idiomas: español e inglés. Trabajo 100% remoto, en Chile y el resto del mundo.
 
-## Qué hace
-- **Automatizaciones (n8n)** — su especialidad. Flujos que hacen solos lo repetitivo: pedidos, correos, reportes, respuestas de WhatsApp, integraciones.
-- **Webs y tiendas online** — sitios rápidos, hechos para vender y fáciles de administrar.
+## Qué hace (servicios)
+- **Automatización con IA (n8n)** — su especialidad. Flujos y **chatbots/agentes de IA para WhatsApp** que responden consultas, cotizan, agendan citas, capturan leads 24/7, procesan pedidos, envían correos y reportes, e integran tus sistemas.
+- **Páginas web y tiendas online** — sitios rápidos, hechos para vender y fáciles de administrar (Shopify, tiendas a medida).
 - **Integración de APIs** — conecta ERP, tienda y apps para que todo hable entre sí.
-- **Fotos de producto con IA** — imágenes de catálogo profesionales a partir de fotos propias.
+- **Fotos de producto con IA** — imágenes de catálogo profesionales a partir de fotos propias (image-to-image).
+- **Generación de leads con IA** — scraping + calificación + outreach automatizado.
+
+## Términos relacionados (para búsqueda)
+chatbot de WhatsApp con IA, agente de IA para WhatsApp, automatización con IA para pymes, experto n8n, integración de APIs, página web para pyme, crear tienda online Chile, fotos de producto con IA, AI automation freelancer, n8n developer, AI agents, lead generation.
 
 ## Proyectos reales
 - **Sololander** (https://sololander.com) — SaaS que arma páginas de producto Shopify desde un link de AliExpress; scraper anti-bot, Supabase y flujos n8n.
@@ -14,7 +18,7 @@
 - **Demo Foto → catálogo** — automatización n8n: subes la foto de un producto y recibes por correo la imagen mejorada + un video del producto girando.
 
 ## Cómo trabaja
-Precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme.
+Precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme. También enseña a equipos a usar Claude e IA aplicada, y da charlas de inteligencia artificial para pymes.
 
 ## Contacto
 - WhatsApp: +56 9 6123 8295
