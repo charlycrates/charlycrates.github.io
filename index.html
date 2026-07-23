@@ -193,6 +193,20 @@ section{position:relative}
 .svc h3{font-family:'Space Grotesk',sans-serif;font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
 .svc p{margin-top:9px;font-size:.9rem;color:var(--muted);line-height:1.55}
 .svc-flag{position:absolute;top:18px;right:18px;font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(185,255,61,.35);border-radius:999px;padding:3px 8px}
+/* mini-flujo animado (Automatizaciones) */
+.svc-anim{margin:16px 0 18px;border:1px solid rgba(185,255,61,.2);border-radius:12px;background:linear-gradient(180deg,rgba(185,255,61,.06),rgba(20,22,27,.35));padding:16px 12px;overflow:hidden}
+.flow-mini{width:100%;height:auto;display:block}
+.wm-base{fill:none;stroke:rgba(255,255,255,.12);stroke-width:2;stroke-linecap:round}
+.wm-flow{fill:none;stroke:var(--lime);stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7;opacity:.7;animation:wmflow 1.1s linear infinite}
+@keyframes wmflow{to{stroke-dashoffset:-22}}
+.wm-node rect{fill:#14161B;stroke:rgba(255,255,255,.16);stroke-width:1.2}
+.wm-node .core{fill:var(--lime)}
+.wm-node{animation:wmnode 2.4s linear infinite}
+.wm-node.n1{animation-delay:.05s}
+.wm-node.n2{animation-delay:1.05s}
+.wm-node.n3{animation-delay:1.95s}
+@keyframes wmnode{0%,4%{filter:none}9%{filter:drop-shadow(0 0 7px var(--lime-glow))}24%,100%{filter:none}}
+.wm-dot{fill:var(--lime);filter:drop-shadow(0 0 6px var(--lime))}
 
 /* trabajos */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -401,7 +415,16 @@ section{position:relative}
       <article class="svc feature">
         <span class="svc-flag" data-i18n="serv_flag">Mi especialidad</span>
         <div class="svc-idx">01</div>
-        <div class="svc-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><circle cx="18" cy="6" r="2.4"/><path d="M8.4 6H18M18 8.4V15.6M8.4 7.5 15.8 15"/></svg></div>
+        <div class="svc-anim" aria-hidden="true">
+          <svg class="flow-mini" viewBox="0 0 240 84" role="img" aria-label="Flujo de automatización en marcha">
+            <path class="wm-base" d="M14 42 H226"/>
+            <path class="wm-flow" d="M14 42 H226"/>
+            <g class="wm-node n1"><rect x="6" y="27" width="46" height="30" rx="9"/><rect class="core" x="21" y="37" width="16" height="10" rx="2.5"/></g>
+            <g class="wm-node n2"><rect x="97" y="24" width="46" height="36" rx="10"/><g transform="translate(112,34)"><path class="core" d="M8 0 C9 4.5 11.5 7 16 8 C11.5 9 9 11.5 8 16 C7 11.5 4.5 9 0 8 C4.5 7 7 4.5 8 0 Z"/></g></g>
+            <g class="wm-node n3"><rect x="188" y="27" width="46" height="30" rx="9"/><circle class="core" cx="211" cy="42" r="5"/></g>
+            <circle class="wm-dot" r="4"><animateMotion dur="2.4s" repeatCount="indefinite" path="M14 42 H226"/></circle>
+          </svg>
+        </div>
         <h3 data-i18n="serv1_h">Automatizaciones</h3>
         <p data-i18n="serv1_p">Flujos en n8n y <b>chatbots de WhatsApp</b> que hacen solos lo repetitivo: responder, cotizar, agendar, pedidos y reportes.</p>
       </article>
