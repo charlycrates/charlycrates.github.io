@@ -1,0 +1,26 @@
+# Charly — Carlos Rosas
+
+> Freelancer en Santiago de Chile que construye soluciones con IA para pymes. Trabajas directo con él (no es una agencia). Idiomas: español e inglés. Trabajo 100% remoto, en Chile y el resto del mundo.
+
+## Qué hace
+- **Automatizaciones (n8n)** — su especialidad. Flujos que hacen solos lo repetitivo: pedidos, correos, reportes, respuestas de WhatsApp, integraciones.
+- **Webs y tiendas online** — sitios rápidos, hechos para vender y fáciles de administrar.
+- **Integración de APIs** — conecta ERP, tienda y apps para que todo hable entre sí.
+- **Fotos de producto con IA** — imágenes de catálogo profesionales a partir de fotos propias.
+
+## Proyectos reales
+- **Sololander** (https://sololander.com) — SaaS que arma páginas de producto Shopify desde un link de AliExpress; scraper anti-bot, Supabase y flujos n8n.
+- **Beatflow** (https://beatflow.store) — marca propia de e-commerce con pipeline de contenido IA (imagen y video).
+- **Demo Foto → catálogo** — automatización n8n: subes la foto de un producto y recibes por correo la imagen mejorada + un video del producto girando.
+
+## Cómo trabaja
+Precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme.
+
+## Contacto
+- WhatsApp: +56 9 6123 8295
+- Correo: charlycrates@gmail.com
+- LinkedIn: https://www.linkedin.com/in/carlos-rosas-1802291a5/
+- Sitio: https://charlycrates.github.io/
+
+## Stack
+n8n, Claude (Anthropic), OpenAI, Supabase, PostgreSQL, Node.js, Playwright, Shopify, FFmpeg, Google Gemini, Stripe, WhatsApp API.
