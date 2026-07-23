@@ -230,9 +230,10 @@ section{position:relative}
 /* proceso */
 .proceso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .step{position:relative;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:28px 24px}
-.step-num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--lime-dim);color:var(--lime);border:1px solid rgba(185,255,61,.3)}
-.step h3{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:600;margin-top:18px}
-.step p{margin-top:9px;color:var(--muted);font-size:.92rem;line-height:1.55}
+.step-num{flex:none;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--lime-dim);color:var(--lime);border:1px solid rgba(185,255,61,.3)}
+.step-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.step h3{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:600;margin:0}
+.step p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
 .proceso-note{margin-top:24px;display:inline-flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 18px;background:var(--surface)}
 .proceso-note .tick{color:var(--lime)}
 
@@ -479,9 +480,9 @@ section{position:relative}
       <h2 data-i18n="proc_h2">Simple, claro y sin sorpresas.</h2>
     </div>
     <div class="proceso-grid">
-      <div class="step"><div class="step-num">1</div><h3 data-i18n="proc1_h">Conversamos</h3><p data-i18n="proc1_p">Me cuentas qué necesitas por WhatsApp. Te hago las preguntas justas y entiendo tu negocio.</p></div>
-      <div class="step"><div class="step-num">2</div><h3 data-i18n="proc2_h">Te paso un precio cerrado</h3><p data-i18n="proc2_p">Nada de tarifas por hora infinitas. Sabes exactamente cuánto y qué recibes antes de partir.</p></div>
-      <div class="step"><div class="step-num">3</div><h3 data-i18n="proc3_h">Construyo y te muestro</h3><p data-i18n="proc3_p">Avanzas viendo resultados. Pagas el resto solo cuando estás conforme.</p></div>
+      <div class="step"><div class="step-head"><div class="step-num">1</div><h3 data-i18n="proc1_h">Conversamos</h3></div><p data-i18n="proc1_p">Me cuentas qué necesitas por WhatsApp. Te hago las preguntas justas y entiendo tu negocio.</p></div>
+      <div class="step"><div class="step-head"><div class="step-num">2</div><h3 data-i18n="proc2_h">Te paso un precio cerrado</h3></div><p data-i18n="proc2_p">Nada de tarifas por hora infinitas. Sabes exactamente cuánto y qué recibes antes de partir.</p></div>
+      <div class="step"><div class="step-head"><div class="step-num">3</div><h3 data-i18n="proc3_h">Construyo y te muestro</h3></div><p data-i18n="proc3_p">Avanzas viendo resultados. Pagas el resto solo cuando estás conforme.</p></div>
     </div>
     <div class="proceso-note"><span class="tick">✓</span> <span data-i18n="proc_note">Ves avances antes de pagar el total. Sin letra chica.</span></div>
   </div>
@@ -497,9 +498,9 @@ section{position:relative}
       <div class="about-copy">
         <span class="eyebrow muted">// <span data-i18n="nav_about">Sobre mí</span></span>
         <h2 data-i18n="about_h2">Hola, soy Charly.</h2>
-        <p data-i18n="about_p1">Llevo años construyendo productos digitales con IA: fundé <b>Sololander</b> y <b>Beatflow</b>, y hoy pongo todo eso al servicio de tu negocio.</p>
+        <p data-i18n="about_p1">Llevo años construyendo productos digitales con IA: fundé <b>Sololander</b> y <b>Beatflow</b>. Esa experiencia en automatización, e-commerce e IA aplicada es la que uso para resolver lo que tu negocio necesita.</p>
         <p data-i18n="about_p2">No soy una agencia con veinte correos de por medio: <b>trabajas directo conmigo.</b> Me obsesiona que la tecnología te devuelva tiempo y te traiga clientes, no que te complique la vida.</p>
-        <p data-i18n="about_p3">Y si te interesa, también <b>enseño a tu equipo a usar Claude e IA aplicada</b> en el día a día, o doy charlas de inteligencia artificial para pymes.</p>
+        <p data-i18n="about_p3">Si necesitas que tu equipo aprenda a sacarle provecho a Claude e IA, hago <b>capacitaciones y charlas de inteligencia artificial</b> para pymes.</p>
         <div class="about-sign">Charly</div>
       </div>
     </div>
@@ -590,9 +591,9 @@ section{position:relative}
       proc3_h:"I build and show you",proc3_p:"You see progress as it happens. You pay the rest only when you're happy.",
       proc_note:"You see progress before you pay in full. No fine print.",
       about_badge:"Available for new projects",about_h2:"Hi, I'm Charly.",
-      about_p1:"I've spent years building digital products with AI: I founded <b>Sololander</b> and <b>Beatflow</b>, and now I put all of that to work for your business.",
+      about_p1:"I've spent years building digital products with AI: I founded <b>Sololander</b> and <b>Beatflow</b>. That hands-on experience in automation, e-commerce and applied AI is what I use to solve what your business needs.",
       about_p2:"I'm not an agency with twenty people in the loop. <b>You work directly with me.</b> I'm obsessed with tech that gives you time back and brings in customers, not tech that complicates your life.",
-      about_p3:"And if you're into it, I can also <b>teach your team to use Claude and applied AI</b> day to day, or give AI talks for small businesses.",
+      about_p3:"If you need your team to get the most out of Claude and AI, I run <b>AI training sessions and talks</b> for small businesses.",
       cta_eyebrow:"Let's start",cta_h2:"What's the one task you'd love to never do again?",cta_p:"Tell me what you need. I'll get back to you fast and show you, no strings attached, how to solve it with AI for your business.",
       cta_mail:"or email me at",
       footer_tag:"I build digital solutions with AI from Santiago, Chile — for small businesses that want to automate and sell better.",
