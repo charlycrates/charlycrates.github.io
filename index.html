@@ -223,9 +223,10 @@ section{position:relative}
 .web-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0;animation:webscan 4.6s ease-in-out infinite}
 @keyframes webscan{0%,12%{left:0;opacity:0}15%{opacity:1}48%{left:calc(100% - 2px);opacity:1}52%,100%{opacity:0}}
 .web-tag{position:absolute;bottom:6px;font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(10,11,13,.7);z-index:2}
-.web-tag-b{left:6px;color:var(--muted)}
-.web-tag-a{right:6px;color:var(--lime);opacity:0;animation:webtag 4.6s ease-in-out infinite}
-@keyframes webtag{0%,45%{opacity:0}55%,90%{opacity:1}96%,100%{opacity:0}}
+.web-tag-b{left:6px;color:var(--muted);animation:webtagB 4.6s ease-in-out infinite}
+.web-tag-a{right:6px;color:var(--lime);opacity:0;animation:webtagA 4.6s ease-in-out infinite}
+@keyframes webtagB{0%,12%{opacity:1}48%,62%{opacity:0}96%,100%{opacity:1}}
+@keyframes webtagA{0%,12%{opacity:0}48%,62%{opacity:1}96%,100%{opacity:0}}
 .photo-mock{position:relative;aspect-ratio:16/10;width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--line-2)}
 .photo-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph-before{filter:grayscale(.65) brightness(.55) contrast(.95)}
@@ -234,9 +235,10 @@ section{position:relative}
 .ph-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0;animation:phscan 4.5s ease-in-out infinite}
 @keyframes phscan{0%,12%{left:0;opacity:0}15%{opacity:1}48%{left:calc(100% - 2px);opacity:1}52%,100%{opacity:0}}
 .ph-tag{position:absolute;bottom:6px;font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(10,11,13,.7)}
-.ph-tag-b{left:6px;color:var(--muted)}
-.ph-tag-a{right:6px;color:var(--lime);opacity:0;animation:phtag 4.5s ease-in-out infinite}
-@keyframes phtag{0%,45%{opacity:0}55%,90%{opacity:1}96%,100%{opacity:0}}
+.ph-tag-b{left:6px;color:var(--muted);animation:phtagB 4.5s ease-in-out infinite}
+.ph-tag-a{right:6px;color:var(--lime);opacity:0;animation:phtagA 4.5s ease-in-out infinite}
+@keyframes phtagB{0%,12%{opacity:1}48%,62%{opacity:0}96%,100%{opacity:1}}
+@keyframes phtagA{0%,12%{opacity:0}48%,62%{opacity:1}96%,100%{opacity:0}}
 .n8n-mock{position:relative;aspect-ratio:16/6;width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--line-2);background:#0d0f13}
 .n8n-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
 .n8n-mock::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 26px rgba(10,11,13,.5);pointer-events:none}
