@@ -5,7 +5,7 @@
 ## Qué hace (servicios)
 - **Automatización con IA (n8n)** — su especialidad. Flujos y **chatbots/agentes de IA para WhatsApp** que responden consultas, cotizan, agendan citas, capturan leads 24/7, procesan pedidos, envían correos y reportes, e integran tus sistemas.
 - **Páginas web y tiendas online** — sitios rápidos, hechos para vender y fáciles de administrar (Shopify, tiendas a medida).
-- **Integración de APIs** — conecta ERP, tienda y apps para que todo hable entre sí.
+- **Integración de APIs** — conecta tu tienda, apps y sistemas (ERP, CRM y otras herramientas que expongan API/exportación) para que todo hable entre sí.
 - **Fotos de producto con IA** — imágenes de catálogo profesionales a partir de fotos propias (image-to-image).
 - **Generación de leads con IA** — scraping + calificación + outreach automatizado.
 
