@@ -230,31 +230,40 @@ section{position:relative}
 .web-screen{position:relative;aspect-ratio:16/10;width:100%}
 .web-screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
 .web-before{filter:grayscale(.5) brightness(.72) contrast(.95)}
-.web-after{clip-path:inset(0 100% 0 0);animation:webwipe 4.6s ease-in-out infinite}
+.web-after{clip-path:inset(0 0 0 0)}
+.svc-anim.play .web-after{animation:webwipe 4.6s ease-in-out infinite}
 @keyframes webwipe{0%,12%{clip-path:inset(0 100% 0 0)}48%,62%{clip-path:inset(0 0 0 0)}96%,100%{clip-path:inset(0 100% 0 0)}}
-.web-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0;animation:webscan 4.6s ease-in-out infinite}
+.web-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0}
+.svc-anim.play .web-scan{animation:webscan 4.6s ease-in-out infinite}
 @keyframes webscan{0%,12%{left:0;opacity:0}15%{opacity:1}48%{left:calc(100% - 2px);opacity:1}52%,100%{opacity:0}}
 .web-tag{position:absolute;bottom:6px;font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(10,11,13,.7);z-index:2}
-.web-tag-b{left:6px;color:var(--muted);animation:webtagB 4.6s ease-in-out infinite}
-.web-tag-a{right:6px;color:var(--lime);opacity:0;animation:webtagA 4.6s ease-in-out infinite}
+.web-tag-b{left:6px;color:var(--muted);opacity:0}
+.web-tag-a{right:6px;color:var(--lime);opacity:1}
+.svc-anim.play .web-tag-b{animation:webtagB 4.6s ease-in-out infinite}
+.svc-anim.play .web-tag-a{animation:webtagA 4.6s ease-in-out infinite}
 @keyframes webtagB{0%,12%{opacity:1}48%,62%{opacity:0}96%,100%{opacity:1}}
 @keyframes webtagA{0%,12%{opacity:0}48%,62%{opacity:1}96%,100%{opacity:0}}
 .photo-mock{position:relative;aspect-ratio:16/10;width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--line-2)}
 .photo-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph-before{filter:grayscale(.65) brightness(.55) contrast(.95)}
-.ph-after{clip-path:inset(0 100% 0 0);animation:phwipe 4.5s ease-in-out infinite;filter:contrast(1.06) saturate(1.06)}
+.ph-after{clip-path:inset(0 0 0 0);filter:contrast(1.06) saturate(1.06)}
+.svc-anim.play .ph-after{animation:phwipe 4.5s ease-in-out infinite}
 @keyframes phwipe{0%,12%{clip-path:inset(0 100% 0 0)}48%,62%{clip-path:inset(0 0 0 0)}96%,100%{clip-path:inset(0 100% 0 0)}}
-.ph-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0;animation:phscan 4.5s ease-in-out infinite}
+.ph-scan{position:absolute;top:0;bottom:0;width:2px;left:0;background:linear-gradient(180deg,transparent,var(--lime),transparent);box-shadow:0 0 14px 4px var(--lime-glow);opacity:0}
+.svc-anim.play .ph-scan{animation:phscan 4.5s ease-in-out infinite}
 @keyframes phscan{0%,12%{left:0;opacity:0}15%{opacity:1}48%{left:calc(100% - 2px);opacity:1}52%,100%{opacity:0}}
 .ph-tag{position:absolute;bottom:6px;font-family:'JetBrains Mono',monospace;font-size:.52rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 6px;border-radius:5px;background:rgba(10,11,13,.7)}
-.ph-tag-b{left:6px;color:var(--muted);animation:phtagB 4.5s ease-in-out infinite}
-.ph-tag-a{right:6px;color:var(--lime);opacity:0;animation:phtagA 4.5s ease-in-out infinite}
+.ph-tag-b{left:6px;color:var(--muted);opacity:0}
+.ph-tag-a{right:6px;color:var(--lime);opacity:1}
+.svc-anim.play .ph-tag-b{animation:phtagB 4.5s ease-in-out infinite}
+.svc-anim.play .ph-tag-a{animation:phtagA 4.5s ease-in-out infinite}
 @keyframes phtagB{0%,12%{opacity:1}48%,62%{opacity:0}96%,100%{opacity:1}}
 @keyframes phtagA{0%,12%{opacity:0}48%,62%{opacity:1}96%,100%{opacity:0}}
 .n8n-mock{position:relative;aspect-ratio:16/6;width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--line-2);background:#0d0f13}
 .n8n-mock img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
 .n8n-mock::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 26px rgba(10,11,13,.5);pointer-events:none}
-.n8n-sweep{position:absolute;top:0;bottom:0;width:70px;left:-70px;background:linear-gradient(90deg,transparent,rgba(185,255,61,.20),transparent);animation:n8nsweep 3s linear infinite;pointer-events:none}
+.n8n-sweep{position:absolute;top:0;bottom:0;width:70px;left:-70px;background:linear-gradient(90deg,transparent,rgba(185,255,61,.20),transparent);pointer-events:none}
+.svc-anim.play .n8n-sweep{animation:n8nsweep 3s linear infinite}
 .n8n-sweep::before{content:"";position:absolute;top:6%;bottom:6%;right:16px;width:2px;background:var(--lime);box-shadow:0 0 12px 3px var(--lime-glow)}
 @keyframes n8nsweep{0%{left:-14%}100%{left:106%}}
 .n8n-tag{position:absolute;top:7px;left:8px;z-index:2;font-family:'JetBrains Mono',monospace;font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);padding:2px 7px;border-radius:5px;background:rgba(10,11,13,.74);border:1px solid rgba(185,255,61,.28);display:inline-flex;align-items:center;gap:5px}
@@ -267,14 +276,17 @@ section{position:relative}
 .api-node.claude svg{fill:#D97757}
 .api-node.shopify svg{fill:#95BF47}
 .api-node.whatsapp svg{fill:#25D366}
-.api-node::after{content:"";position:absolute;inset:-1px;border-radius:11px;box-shadow:0 0 0 0 rgba(185,255,61,0);animation:apiglow 3.3s ease-in-out infinite}
+.api-node::after{content:"";position:absolute;inset:-1px;border-radius:11px;box-shadow:0 0 0 0 rgba(185,255,61,0)}
+.svc-anim.play .api-node::after{animation:apiglow 3.3s ease-in-out infinite}
 .api-node.claude::after{animation-delay:0s}
 .api-node.shopify::after{animation-delay:1.1s}
 .api-node.whatsapp::after{animation-delay:2.2s}
 @keyframes apiglow{0%,68%,100%{box-shadow:0 0 0 0 rgba(185,255,61,0)}12%{box-shadow:0 0 12px 1px var(--lime-glow)}}
 .api-wire{flex:1 1 auto;height:2px;position:relative;background:linear-gradient(90deg,transparent,rgba(185,255,61,.22),transparent)}
-.api-dot{position:absolute;top:50%;left:0;width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime);transform:translate(-50%,-50%);animation:apidot 2.1s linear infinite}
-.api-dot.rev{background:#eaffc2;animation:apidotrev 2.1s linear infinite;animation-delay:.5s}
+.api-dot{position:absolute;top:50%;left:0;width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px var(--lime);transform:translate(-50%,-50%);opacity:0}
+.api-dot.rev{background:#eaffc2}
+.svc-anim.play .api-dot{opacity:1;animation:apidot 2.1s linear infinite}
+.svc-anim.play .api-dot.rev{animation:apidotrev 2.1s linear infinite;animation-delay:.5s}
 @keyframes apidot{0%{left:-2%}100%{left:102%}}
 @keyframes apidotrev{0%{left:102%}100%{left:-2%}}
 
@@ -345,6 +357,18 @@ section{position:relative}
 .cta-mail a:hover{color:var(--lime);border-color:var(--lime)}
 .cta .btn-wa{padding:16px 30px;font-size:1.02rem}
 
+/* faq */
+.faq-list{max-width:760px;margin-top:6px}
+.faq-item{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+.faq-item[open]{border-color:var(--line-2)}
+.faq-item summary{list-style:none;cursor:pointer;padding:17px 20px;display:flex;align-items:center;gap:14px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;color:var(--text);transition:color .2s}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:1.35rem;color:var(--lime);transition:transform .25s ease;line-height:1;flex:none}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item summary:hover{color:var(--lime)}
+.faq-a{padding:0 20px 18px;color:var(--muted);font-size:.95rem;line-height:1.62}
+.faq-a b{color:var(--text)}
+
 /* footer */
 .footer{border-top:1px solid var(--line);padding:52px 0 40px}
 .footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
@@ -400,6 +424,7 @@ section{position:relative}
       <a href="#trabajos" data-i18n="nav_work">Trabajos</a>
       <a href="#proceso" data-i18n="nav_how">Cómo trabajo</a>
       <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
+      <a href="#faq">FAQ</a>
       <a href="#contacto" data-i18n="nav_contact">Contacto</a>
     </nav>
     <div class="header-right">
@@ -626,6 +651,23 @@ section{position:relative}
   </div>
 </section>
 
+<section id="faq" class="sec-pad" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow muted">// <span data-i18n="faq_eyebrow">Preguntas frecuentes</span></span>
+      <h2 data-i18n="faq_h2">Lo que suelen preguntarme.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary data-i18n="faq_q1">¿Cómo hacer un chatbot de WhatsApp con IA?</summary><div class="faq-a" data-i18n="faq_a1">Conecto WhatsApp (API de WhatsApp Business) a un flujo en n8n y a un modelo de IA como Claude. El bot responde, cotiza, agenda y capta leads 24/7, integrado con tus sistemas. Lo dejo montado y funcionando, hecho a la medida de tu negocio.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q2">¿Cuánto cuesta un proyecto?</summary><div class="faq-a" data-i18n="faq_a2">Depende del alcance. Trabajo con <b>precio cerrado por proyecto</b>, acordado antes de empezar (sin tarifas por hora abiertas). Me escribes por WhatsApp, me cuentas qué necesitas y recibes un rango claro, sin compromiso.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q3">n8n o Make, ¿cuál conviene a una pyme?</summary><div class="faq-a" data-i18n="faq_a3">Para la mayoría de las pymes, n8n conviene por costo y control: es open-source, se puede autoalojar y no cobra por ejecución. Make es más rápido para partir pero se encarece al escalar. Elijo la herramienta según tu caso.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q4">¿Trabajas con Shopify y tiendas online?</summary><div class="faq-a" data-i18n="faq_a4">Sí. Desarrollo tiendas y automatizaciones sobre Shopify (temas Liquid, apps y su API), y conecto Shopify con otras herramientas mediante n8n para que todo funcione en conjunto.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q5">¿Trabajas con clientes fuera de Chile?</summary><div class="faq-a" data-i18n="faq_a5">Sí. Trabajo 100% remoto con clientes en Chile y en el resto del mundo, en español o inglés.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q6">¿Haces capacitaciones o charlas de IA?</summary><div class="faq-a" data-i18n="faq_a6">Sí. Hago capacitaciones y charlas de inteligencia artificial para equipos de pymes, incluyendo cómo sacarle provecho a Claude y a la IA aplicada en el día a día.</div></details>
+    </div>
+  </div>
+</section>
+
 <section id="contacto" class="cta sec-pad" style="padding-top:0">
   <div class="container">
     <div class="cta-inner">
@@ -713,6 +755,13 @@ section{position:relative}
       about_p1:"I've spent years building digital products with AI: I founded <b>Sololander</b> and <b>Beatflow</b>. That hands-on experience in automation, e-commerce and applied AI is what I use to solve what your business needs.",
       about_p2:"I'm not an agency with twenty people in the loop. <b>You work directly with me.</b> I'm obsessed with tech that gives you time back and brings in customers, not tech that complicates your life.",
       about_p3:"If you need your team to get the most out of Claude and AI, I run <b>AI training sessions and talks</b> for small businesses.",
+      faq_eyebrow:"FAQ",faq_h2:"What people usually ask me.",
+      faq_q1:"How do you build a WhatsApp chatbot with AI?",faq_a1:"I connect WhatsApp (WhatsApp Business API) to an n8n flow and an AI model like Claude. The bot replies, quotes, schedules and captures leads 24/7, integrated with your systems. I set it up and get it running, tailored to your business.",
+      faq_q2:"How much does a project cost?",faq_a2:"It depends on the scope. I work with a <b>fixed price per project</b>, agreed before we start (no open-ended hourly rates). Message me on WhatsApp, tell me what you need and you'll get a clear range, no strings attached.",
+      faq_q3:"n8n or Make: which is better for a small business?",faq_a3:"For most small businesses, n8n wins on cost and control: it's open-source, self-hostable and doesn't charge per execution. Make is faster to start but gets pricey as you scale. I pick the tool that fits your case.",
+      faq_q4:"Do you work with Shopify and online stores?",faq_a4:"Yes. I build stores and automations on Shopify (Liquid themes, apps and its API), and connect Shopify with other tools through n8n so everything works together.",
+      faq_q5:"Do you work with clients outside Chile?",faq_a5:"Yes. I work 100% remotely with clients in Chile and worldwide, in Spanish or English.",
+      faq_q6:"Do you run AI training or talks?",faq_a6:"Yes. I run AI training sessions and talks for small-business teams, including how to get the most out of Claude and applied AI day to day.",
       cta_eyebrow:"Let's start",cta_h2:"What's the one task you'd love to never do again?",cta_p:"Tell me what you need. I'll get back to you fast and show you, no strings attached, how to solve it with AI for your business.",
       cta_mail:"or email me at",
       footer_tag:"I build digital solutions with AI from Santiago, Chile — for small businesses that want to automate and sell better.",
@@ -761,6 +810,14 @@ section{position:relative}
   document.querySelectorAll('.lang-pill').forEach(function(p){
     p.addEventListener('click',function(){var l=p.getAttribute('data-lang');apply(l);setWA(l);});
   });
+})();
+</script>
+<script>
+(function(){
+  var anims=document.querySelectorAll('.svc-anim');
+  if(!('IntersectionObserver' in window)){anims.forEach(function(el){el.classList.add('play');});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('play');io.unobserve(e.target);}});},{threshold:.2,rootMargin:'0px 0px -8% 0px'});
+  anims.forEach(function(el){io.observe(el);});
 })();
 </script>
 </body>
