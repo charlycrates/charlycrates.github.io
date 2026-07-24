@@ -22,11 +22,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Charly | Automatización con IA, chatbots de WhatsApp y webs">
 <meta name="twitter:description" content="Chatbots de WhatsApp, automatización con IA (n8n), webs, integraciones y fotos de producto con IA.">
+<meta property="og:image" content="https://charlycrates.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Charly · builder IA — Lo que tu negocio necesite, lo construyo con IA.">
+<meta name="twitter:image" content="https://charlycrates.github.io/assets/og.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect x='1' y='1' width='28' height='28' rx='9' fill='%230A0B0D' stroke='%23B9FF3D' stroke-opacity='.6'/%3E%3Ccircle cx='9.5' cy='10' r='2.6' fill='%23B9FF3D'/%3E%3Ccircle cx='20.5' cy='20' r='2.6' fill='%23B9FF3D'/%3E%3Cpath d='M9.5 10 L20.5 20' stroke='%23B9FF3D' stroke-width='1.4' stroke-opacity='.55'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
 <!-- schema.org -->
 <script type="application/ld+json">
@@ -42,8 +48,17 @@
       "url":"https://charlycrates.github.io/",
       "image":"https://charlycrates.github.io/assets/yo-card.jpg",
       "sameAs":["https://www.linkedin.com/in/carlos-rosas-1802291a5/"],
+      "contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+56961238295","email":"charlycrates@gmail.com","availableLanguage":["es","en"]},
       "address":{"@type":"PostalAddress","addressLocality":"Santiago","addressCountry":"CL"},
       "knowsAbout":["n8n","Automatización de procesos con IA","Chatbots de WhatsApp","Agentes de IA","Generación de leads","Inteligencia Artificial","Claude (Anthropic)","Integración de APIs","Desarrollo web","Tiendas online","Shopify","E-commerce","Fotos de producto con IA","Web scraping","Supabase"]
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://charlycrates.github.io/#website",
+      "url":"https://charlycrates.github.io/",
+      "name":"Charly · builder IA",
+      "inLanguage":["es","en"],
+      "publisher":{"@id":"https://charlycrates.github.io/#charly"}
     },
     {
       "@type":"ProfessionalService",
@@ -79,8 +94,6 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 :root{
   --bg:#0A0B0D;--bg-2:#0D0E11;--surface:#121419;--surface-2:#171A20;
   --line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);
@@ -193,21 +206,8 @@ section{position:relative}
 .svc h3{font-family:'Space Grotesk',sans-serif;font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
 .svc p{margin-top:9px;font-size:.9rem;color:var(--muted);line-height:1.55}
 .svc-flag{position:absolute;top:18px;right:18px;font-family:'JetBrains Mono',monospace;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(185,255,61,.35);border-radius:999px;padding:3px 8px}
-/* mini-flujo animado (Automatizaciones) */
+/* animación de tarjetas de servicio */
 .svc-anim{margin:16px 0 18px;border:1px solid rgba(185,255,61,.2);border-radius:12px;background:linear-gradient(180deg,rgba(185,255,61,.06),rgba(20,22,27,.35));padding:16px 12px;overflow:hidden}
-.flow-mini{width:100%;height:auto;display:block}
-.wm-base{fill:none;stroke:rgba(255,255,255,.12);stroke-width:2;stroke-linecap:round}
-.wm-flow{fill:none;stroke:var(--lime);stroke-width:2;stroke-linecap:round;stroke-dasharray:4 7;opacity:.7;animation:wmflow 1.1s linear infinite}
-@keyframes wmflow{to{stroke-dashoffset:-22}}
-.wm-node rect{fill:#14161B;stroke:rgba(255,255,255,.16);stroke-width:1.2}
-.wm-node .core{fill:var(--lime)}
-.wm-node{animation:wmnode 2.4s linear infinite}
-.wm-node.n1{animation-delay:.05s}
-.wm-node.n2{animation-delay:1.05s}
-.wm-node.n3{animation-delay:1.95s}
-@keyframes wmnode{0%,4%{filter:none}9%{filter:drop-shadow(0 0 7px var(--lime-glow))}24%,100%{filter:none}}
-.wm-dot{fill:var(--lime);filter:drop-shadow(0 0 6px var(--lime))}
-.wm-dot.alt{fill:#eaffc2}
 .web-mock{border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#0f1116}
 .web-bar{height:15px;background:#181b21;display:flex;align-items:center;gap:4px;padding:0 7px;border-bottom:1px solid var(--line)}
 .web-bar span{width:5px;height:5px;border-radius:50%;background:var(--faint)}
@@ -443,7 +443,7 @@ section{position:relative}
       </svg>
       <div class="flow-foot">
         <span><b>0</b> <span data-i18n="flow_f2">pasos manuales</span></span><span class="flow-sep"></span>
-        <span><b>24/7</b> <span data-i18n="flow_f3">corriendo</span></span>
+        <span><b>24/7</b> <span data-i18n="flow_f3">en automático</span></span>
       </div>
     </div>
   </div>
@@ -674,7 +674,7 @@ section{position:relative}
       hero_sub:"I sit down with you, learn how your business really works, and together we find the concrete solution (a website, store or automation) that <b>saves you hours and brings in more customers.</b> No templates, no fluff.",
       hero_cta1:"Let's talk on WhatsApp",hero_cta2:"See my work",
       proof1:"Maker of Sololander.com & Beatflow.store",proof2:"n8n · AI · APIs in production",proof3:"Santiago, Chile · working worldwide",
-      flow_name:"example · automation",flow_f1:"per product",flow_f2:"manual steps",flow_f3:"running",
+      flow_name:"example · automation",flow_f2:"manual steps",flow_f3:"on autopilot",
       n_upload:"Upload a photo",n_process:"processes & generates",n_img:"Image +HD",n_video:"360° video",n_mail:"To your inbox",n_done:"delivered ✓",
       serv_h2:"Four ways to take work off your plate.",serv_p:"All hand-built and AI-powered. We start with whatever hurts most.",serv_flag:"My specialty",
       serv1_h:"Automations",serv1_p:"n8n flows and WhatsApp chatbots that handle the repetitive stuff on their own: replies, quotes, scheduling, orders and reports.",
@@ -701,7 +701,7 @@ section{position:relative}
       footer_mail:"Email",footer_nav:"Navigate",footer_made:"Hand-built, AI-powered · Santiago, CL"
     }
   };
-  var META={es:{title:document.title,desc:"Freelancer en Chile que construye soluciones con IA: automatizaciones en n8n, webs y tiendas, integración de APIs y fotos de producto con IA."},
+  var META={es:{title:document.title,desc:"Automatización con IA para pymes: chatbots de WhatsApp, agentes de IA, flujos en n8n, páginas web y tiendas online, integración de APIs y fotos de producto con IA. Trabajas directo con Charly. Chile y remoto."},
             en:{title:"Charly — I build with AI for your business | Automation, web & n8n",desc:"Chile-based freelancer building AI solutions: n8n automations, websites & stores, API integrations and AI product photos. You work directly with me."}};
   var ES_CACHE={};
   function cacheES(){document.querySelectorAll('[data-i18n]').forEach(function(el){ES_CACHE[el.getAttribute('data-i18n')]=el.innerHTML;});
