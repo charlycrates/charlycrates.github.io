@@ -84,6 +84,7 @@
       "@type":"FAQPage",
       "mainEntity":[
         {"@type":"Question","name":"¿Qué hace Charly?","acceptedAnswer":{"@type":"Answer","text":"Charly (Carlos Rosas), en Santiago de Chile, es consultor de IA y automatización para pymes: agentes de IA, automatizaciones en n8n, sitios web y tiendas online, integración de APIs y fotos de producto con IA. Trabajas directo con él, sin agencia de por medio."}},
+        {"@type":"Question","name":"¿Primero evalúas si de verdad necesito IA, o me vendes una automatización no más?","acceptedAnswer":{"@type":"Answer","text":"Evalúa primero. Antes de proponer nada, Charly (Carlos Rosas) revisa contigo dónde se pierde más tiempo o plata en tu proceso, y si la respuesta correcta es una automatización, un agente de IA o algo más simple, te lo dice igual — no propone un sistema a medida si no hace falta."}},
         {"@type":"Question","name":"¿Cómo se cobra un proyecto?","acceptedAnswer":{"@type":"Answer","text":"Con un precio cerrado acordado antes de empezar —no tarifas por hora abiertas. Ves avances durante el proceso y pagas el resto solo cuando estás conforme."}},
         {"@type":"Question","name":"¿Trabaja con clientes fuera de Chile?","acceptedAnswer":{"@type":"Answer","text":"Sí. Charly trabaja de forma 100% remota con clientes en Chile y en el resto del mundo, en español o inglés."}},
         {"@type":"Question","name":"¿Puede crear agentes de IA y automatizaciones?","acceptedAnswer":{"@type":"Answer","text":"Sí. Charly construye agentes de IA y automatizaciones en n8n que responden consultas, cotizan, agendan y capturan leads 24/7, integrados con tus sistemas."}},
@@ -330,7 +331,8 @@ section{position:relative}
 .step-head{display:flex;align-items:center;gap:14px;margin-bottom:14px}
 .step h3{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:600;margin:0}
 .step p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
-.proceso-note{margin-top:24px;display:inline-flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 18px;background:var(--surface)}
+.proceso-notes{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.proceso-note{display:inline-flex;align-items:center;gap:10px;font-size:.9rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:10px 18px;background:var(--surface)}
 .proceso-note .tick{color:var(--lime)}
 
 /* sobre mi */
@@ -624,11 +626,14 @@ section{position:relative}
       <h2 data-i18n="proc_h2">Simple, claro y sin sorpresas.</h2>
     </div>
     <div class="proceso-grid">
-      <div class="step"><div class="step-head"><div class="step-num">1</div><h3 data-i18n="proc1_h">Conversamos</h3></div><p data-i18n="proc1_p">Me cuentas qué necesitas y te hago las preguntas justas para entender tu negocio.</p></div>
-      <div class="step"><div class="step-head"><div class="step-num">2</div><h3 data-i18n="proc2_h">Te paso un precio cerrado</h3></div><p data-i18n="proc2_p">Nada de tarifas por hora infinitas. Sabes exactamente cuánto y qué recibes antes de partir.</p></div>
+      <div class="step"><div class="step-head"><div class="step-num">1</div><h3 data-i18n="proc1_h">Diagnóstico antes que nada</h3></div><p data-i18n="proc1_p">Antes de proponerte nada, reviso contigo dónde se te va más tiempo o plata — y te digo derecho si ahí la solución es IA, o algo más simple.</p></div>
+      <div class="step"><div class="step-head"><div class="step-num">2</div><h3 data-i18n="proc2_h">Te paso un precio cerrado</h3></div><p data-i18n="proc2_p">Con eso claro, te paso un precio cerrado. Nada de tarifas por hora infinitas: sabes exactamente cuánto y qué recibes antes de partir.</p></div>
       <div class="step"><div class="step-head"><div class="step-num">3</div><h3 data-i18n="proc3_h">Construyo y te muestro</h3></div><p data-i18n="proc3_p">Avanzas viendo resultados. Pagas el resto solo cuando estás conforme.</p></div>
     </div>
-    <div class="proceso-note"><span class="tick">✓</span> <span data-i18n="proc_note">Ves avances antes de pagar el total. Sin letra chica.</span></div>
+    <div class="proceso-notes">
+      <div class="proceso-note"><span class="tick">✓</span> <span data-i18n="proc_note">Ves avances antes de pagar el total. Sin letra chica.</span></div>
+      <div class="proceso-note"><span class="tick">✓</span> <span data-i18n="proc_note2">Si no hace falta IA, te lo digo igual.</span></div>
+    </div>
   </div>
 </section>
 
@@ -659,6 +664,7 @@ section{position:relative}
     </div>
     <div class="faq-list">
       <details class="faq-item"><summary data-i18n="faq_q1">¿Qué puedo automatizar con IA en mi negocio?</summary><div class="faq-a" data-i18n="faq_a1">Todo lo repetitivo: responder consultas, cotizar, agendar, procesar pedidos, sincronizar tus sistemas y enviar reportes. Armo flujos en n8n con agentes de IA (como Claude), hechos a la medida de tu negocio y funcionando end-to-end.</div></details>
+      <details class="faq-item"><summary data-i18n="faq_q_diag">¿Primero evalúas si de verdad necesito IA, o me vendes una automatización no más?</summary><div class="faq-a" data-i18n="faq_a_diag">Evalúo primero. Antes de proponerte nada, reviso contigo dónde se pierde más tiempo o plata en tu proceso — y si la respuesta correcta es una automatización, un agente de IA o algo bastante más simple, te lo digo igual. No te propongo un sistema a medida si no lo necesitas.</div></details>
       <details class="faq-item"><summary data-i18n="faq_q2">¿Cuánto cuesta un proyecto?</summary><div class="faq-a" data-i18n="faq_a2">Depende del alcance. Trabajo con <b>precio cerrado por proyecto</b>, acordado antes de empezar (sin tarifas por hora abiertas). Me escribes, me cuentas qué necesitas y recibes un rango claro, sin compromiso.</div></details>
       <details class="faq-item"><summary data-i18n="faq_q3">n8n o Make, ¿cuál conviene a una pyme?</summary><div class="faq-a" data-i18n="faq_a3">Para la mayoría de las pymes, n8n conviene por costo y control: es open-source, se puede autoalojar y no cobra por ejecución. Make es más rápido para partir pero se encarece al escalar. Elijo la herramienta según tu caso.</div></details>
       <details class="faq-item"><summary data-i18n="faq_q4">¿Trabajas con Shopify y tiendas online?</summary><div class="faq-a" data-i18n="faq_a4">Sí. Desarrollo tiendas y automatizaciones sobre Shopify (temas Liquid, apps y su API), y conecto Shopify con otras herramientas mediante n8n para que todo funcione en conjunto.</div></details>
@@ -747,16 +753,18 @@ section{position:relative}
       work3_h:"Photo → catalog",work3_p:"Upload a product photo and get the enhanced image plus a 360° spin video back in your inbox. End-to-end automated, hands-free.",
       work3_link:"Ask me for the demo",work_visit:"Visit site",work_store:"Visit store",work_live:"Real example",work_before:"Before",work_after:"After",
       proc_h2:"Simple, clear, no surprises.",
-      proc1_h:"We talk",proc1_p:"Tell me what you need. I ask the right questions and get how your business works.",
-      proc2_h:"You get a fixed price",proc2_p:"No open-ended hourly rates. You know exactly what you'll get and what it costs before we start.",
+      proc1_h:"Diagnosis before anything else",proc1_p:"Before proposing anything, I go through your process with you to find where time or money actually leaks — and tell you straight if the fix is AI, or something simpler.",
+      proc2_h:"You get a fixed price",proc2_p:"With that clear, I give you a fixed price. No open-ended hourly rates: you know exactly what you'll get and what it costs before we start.",
       proc3_h:"I build and show you",proc3_p:"You see progress as it happens. You pay the rest only when you're happy.",
       proc_note:"You see progress before you pay in full. No fine print.",
+      proc_note2:"If you don't actually need AI, I'll tell you that too.",
       about_badge:"Available for new projects",about_h2:"Hi, I'm Charly.",
       about_p1:"I've spent years building digital products with AI: I founded <b>Sololander</b> and <b>Beatflow</b>. That hands-on experience in automation, e-commerce and applied AI is what I use to solve what your business needs.",
       about_p2:"I'm not an agency with twenty people in the loop. <b>You work directly with me.</b> I'm obsessed with tech that gives you time back and brings in customers, not tech that complicates your life.",
       about_p3:"If you need your team to get the most out of Claude and AI, I run <b>AI training sessions and talks</b> for small businesses.",
       faq_eyebrow:"FAQ",faq_h2:"What people usually ask me.",
       faq_q1:"What can I automate with AI in my business?",faq_a1:"Anything repetitive: answering queries, quoting, scheduling, processing orders, syncing your systems and sending reports. I build n8n flows with AI agents (like Claude), tailored to your business and running end-to-end.",
+      faq_q_diag:"Do you evaluate whether I actually need AI first, or do you just sell me an automation?",faq_a_diag:"I evaluate first. Before proposing anything, I go through your process with you to find where time or money is actually leaking — and if the right answer is automation, an AI agent, or something much simpler, I'll tell you either way. I won't pitch you a custom system you don't need.",
       faq_q2:"How much does a project cost?",faq_a2:"It depends on the scope. I work with a <b>fixed price per project</b>, agreed before we start (no open-ended hourly rates). Message me, tell me what you need and you'll get a clear range, no strings attached.",
       faq_q3:"n8n or Make: which is better for a small business?",faq_a3:"For most small businesses, n8n wins on cost and control: it's open-source, self-hostable and doesn't charge per execution. Make is faster to start but gets pricey as you scale. I pick the tool that fits your case.",
       faq_q4:"Do you work with Shopify and online stores?",faq_a4:"Yes. I build stores and automations on Shopify (Liquid themes, apps and its API), and connect Shopify with other tools through n8n so everything works together.",

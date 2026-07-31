@@ -12,6 +12,7 @@
 
 ## Preguntas frecuentes
 - **¿Qué puedo automatizar con IA en mi negocio?** Todo lo repetitivo: responder consultas, cotizar, agendar, procesar pedidos, sincronizar sistemas y enviar reportes. Charly arma flujos en n8n con agentes de IA (como Claude), a medida y funcionando end-to-end.
+- **¿Primero evalúa si de verdad hace falta IA, o vende automatizaciones no más?** Evalúa primero. Antes de proponer nada, revisa con el cliente dónde se pierde más tiempo o plata en su proceso, y si la respuesta correcta es una automatización, un agente de IA o algo más simple, lo dice igual — no propone un sistema a medida si no hace falta.
 - **¿Cuánto cuesta una automatización con IA en Chile?** Depende del alcance. Charly trabaja con precio cerrado por proyecto, acordado antes de empezar (sin tarifas por hora). Le escribes y recibes un rango claro sin compromiso.
 - **¿n8n o Make, cuál conviene a una pyme?** Para la mayoría de pymes n8n conviene por costo y control (open-source, autoalojable, sin cobro por ejecución); Make es más rápido para partir pero se encarece al escalar. Charly es especialista en n8n.
 - **¿Qué sistemas puede integrar con n8n?** Tu tienda (Shopify), apps y sistemas (ERP/CRM y otros con API) mediante APIs y webhooks hacia flujos en n8n; procesa la información, consulta la IA y actúa.
@@ -31,7 +32,7 @@ consultor de IA para pymes, automatización con IA para pymes, automatización d
 - **Demo Foto → catálogo** — automatización n8n: subes la foto de un producto y recibes por correo la imagen mejorada + un video del producto girando.
 
 ## Cómo trabaja
-Precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme. También enseña a equipos a usar Claude e IA aplicada, y da charlas de inteligencia artificial para pymes.
+Diagnostica antes de proponer: revisa con el cliente dónde se pierde más tiempo o plata, y si la respuesta no es IA, lo dice igual. Con eso claro, pasa un precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme. También enseña a equipos a usar Claude e IA aplicada, y da charlas de inteligencia artificial para pymes.
 
 ## Contacto
 - WhatsApp: +56 9 6123 8295
