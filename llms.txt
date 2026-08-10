@@ -28,7 +28,7 @@ consultor de IA para pymes, automatización con IA para pymes, automatización d
 
 ## Proyectos reales
 - **Sololander** (https://sololander.com) — SaaS que arma páginas de producto Shopify desde un link de AliExpress; scraper anti-bot, Supabase y flujos n8n.
-- **Beatflow** (https://beatflow.store) — marca propia de e-commerce con pipeline de contenido IA (imagen y video).
+- **Automatizaciones n8n** — ecosistema propio en producción: notificaciones multicanal con rutas de respaldo, captura de leads y agentes de contenido con RAG y aprobación humana (30+ workflows).
 - **Demo Foto → catálogo** — automatización n8n: subes la foto de un producto y recibes por correo la imagen mejorada + un video del producto girando.
 
 ## Cómo trabaja
