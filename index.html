@@ -49,9 +49,9 @@
       "url":"https://charlycrates.github.io/",
       "image":"https://charlycrates.github.io/assets/yo-card.jpg",
       "sameAs":["https://www.linkedin.com/in/carlos-rosas-1802291a5/","https://github.com/charlycrates"],
-      "contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+56961238295","email":"charlycrates@gmail.com","availableLanguage":["es","en"]},
+      "contactPoint":{"@type":"ContactPoint","contactType":"sales","telephone":"+56947750601","email":"charlycrates@gmail.com","availableLanguage":["es","en"]},
       "address":{"@type":"PostalAddress","addressLocality":"Santiago","addressCountry":"CL"},
-      "knowsAbout":["n8n","Automatización de procesos con IA","Agentes de IA","Generación de leads","Inteligencia Artificial","Claude (Anthropic)","Integración de APIs","Desarrollo web","Tiendas online","Shopify","E-commerce","Fotos de producto con IA","Web scraping","Supabase"]
+      "knowsAbout":["n8n","Automatización de procesos con IA","Agentes de IA","Generación de leads","Inteligencia Artificial","Claude (Anthropic)","Integración de APIs","Desarrollo web","Tiendas online","Shopify","E-commerce","Fotos de producto con IA","Web scraping","Supabase","Claude Code","Desarrollo de software con IA","Vibe coding","TypeScript","React","Node.js","Cloudflare Workers","Pruebas automatizadas"]
     },
     {
       "@type":"WebSite",
@@ -359,6 +359,59 @@ section{position:relative}
 .cta-mail a:hover{color:var(--lime);border-color:var(--lime)}
 .cta .btn-wa{padding:16px 30px;font-size:1.02rem}
 
+/* trabajos: dos enlaces por tarjeta */
+.work-links{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px}
+.work-links .work-link{margin-top:0}
+
+/* caso sololander */
+.case-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;align-items:stretch}
+.arch{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:22px 24px 6px;overflow:hidden}
+.arch-top{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.08em;color:var(--muted);margin-bottom:22px}
+.arch-live{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime-glow);animation:pulse 2.4s ease-out infinite;flex:none}
+.arch-site{margin-left:auto;color:var(--faint);transition:color .2s}
+.arch-site:hover{color:var(--lime)}
+.arch-list{position:relative;list-style:none;margin:0;padding:0}
+.arch-list::before{content:"";position:absolute;left:16px;top:16px;bottom:38px;width:1px;background:linear-gradient(rgba(185,255,61,.45),var(--line-2))}
+.arch-layer{position:relative;display:grid;grid-template-columns:33px 1fr;gap:16px;padding-bottom:20px}
+.arch-node{position:relative;z-index:1;width:33px;height:33px;border-radius:10px;border:1px solid rgba(185,255,61,.34);background:var(--bg-2);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:600;color:var(--lime)}
+.arch-layer h3{font-family:'Space Grotesk',sans-serif;font-size:1.04rem;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+.arch-layer p{margin-top:3px;color:var(--muted);font-size:.88rem;line-height:1.5}
+.arch-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+/* punto que recorre la columna de capas; usa top en % para medirse contra la altura REAL de la lista (cambia con el ancho) */
+.arch-list::after{content:"";position:absolute;z-index:2;left:13px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px 2px var(--lime-glow);opacity:0;animation:archflow 4.2s ease-in-out infinite}
+@keyframes archflow{0%{top:16px;opacity:0}12%{opacity:1}88%{opacity:1}100%{top:calc(100% - 42px);opacity:0}}
+.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:stretch}
+.stat{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:20px 18px;display:flex;flex-direction:column;justify-content:flex-end;min-height:132px}
+.stat em{font-style:normal;margin-bottom:auto;padding-bottom:14px;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;color:var(--faint)}
+.stat.hl em{color:rgba(185,255,61,.7)}
+.stat b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.2vw,2.55rem);letter-spacing:-.035em;line-height:1;color:var(--text)}
+.stat b i{font-style:normal;color:var(--lime);padding:0 .08em}
+.stat span{margin-top:9px;color:var(--muted);font-size:.86rem;line-height:1.45}
+.stat.hl{border-color:rgba(185,255,61,.34);background:linear-gradient(155deg,rgba(185,255,61,.09),var(--surface) 62%)}
+.stat.hl b{color:var(--lime)}
+.method{margin-top:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg-2);padding:clamp(22px,3.5vw,34px)}
+.method-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:24px}
+.method-head h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(1.25rem,2.2vw,1.6rem);letter-spacing:-.02em;line-height:1.22}
+.method-head h3 .hl{color:var(--lime)}
+.method-note{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.m-step{border-top:1px solid var(--line-2);padding-top:16px}
+.m-num{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--lime)}
+.m-step h4{margin-top:8px;font-family:'Space Grotesk',sans-serif;font-size:1.04rem;font-weight:600;letter-spacing:-.01em}
+.m-step p{margin-top:7px;color:var(--muted);font-size:.88rem;line-height:1.56}
+
+
+@media(max-width:900px){
+  .case-grid{grid-template-columns:1fr}
+  .method-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .arch{padding:20px 18px 4px}
+  .arch-site{display:none}
+  .stat{min-height:112px;padding:18px 16px}
+  .method-grid{grid-template-columns:1fr;gap:18px}
+}
+
 /* faq */
 .faq-list{max-width:760px;margin-top:6px}
 .faq-item{border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:10px;overflow:hidden;transition:border-color .2s}
@@ -460,7 +513,7 @@ section{position:relative}
       <div class="hero-proof">
         <span class="proof-item"><span class="tick">◆</span> <span data-i18n="proof1">Creador de Sololander.com · +30 automatizaciones n8n propias</span></span>
         <span class="proof-sep"></span>
-        <span class="proof-item" data-i18n="proof2">n8n · IA · APIs en producción</span>
+        <span class="proof-item" data-i18n="proof2">Claude Code · n8n · APIs en producción</span>
         <span class="proof-sep"></span>
         <span class="proof-item" data-i18n="proof3">Santiago, CL · trabajo global</span>
       </div>
@@ -496,8 +549,8 @@ section{position:relative}
 
 <div class="stack-strip" aria-label="Stack">
   <div class="stack-track">
-    <span class="chip">n8n</span><span class="chip">Claude</span><span class="chip">Supabase</span><span class="chip">Playwright</span><span class="chip">OpenAI</span><span class="chip">Shopify</span><span class="chip">FFmpeg</span><span class="chip">Google&nbsp;Gemini</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Stripe</span>
-    <span class="chip">n8n</span><span class="chip">Claude</span><span class="chip">Supabase</span><span class="chip">Playwright</span><span class="chip">OpenAI</span><span class="chip">Shopify</span><span class="chip">FFmpeg</span><span class="chip">Google&nbsp;Gemini</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Stripe</span>
+    <span class="chip">n8n</span><span class="chip">Claude</span><span class="chip">Supabase</span><span class="chip">Playwright</span><span class="chip">OpenAI</span><span class="chip">Shopify</span><span class="chip">FFmpeg</span><span class="chip">Google&nbsp;Gemini</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Claude&nbsp;Code</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Cloudflare</span>
+    <span class="chip">n8n</span><span class="chip">Claude</span><span class="chip">Supabase</span><span class="chip">Playwright</span><span class="chip">OpenAI</span><span class="chip">Shopify</span><span class="chip">FFmpeg</span><span class="chip">Google&nbsp;Gemini</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Claude&nbsp;Code</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Cloudflare</span>
   </div>
 </div>
 
@@ -584,10 +637,13 @@ section{position:relative}
       <article class="work">
         <div class="work-cover"><img src="assets/sololander-desktop.png" alt="Sololander — SaaS de páginas de producto Shopify" loading="lazy"></div>
         <div class="work-body">
-          <div class="work-tags"><span class="tag">SaaS</span><span class="tag">n8n</span><span class="tag">Supabase</span><span class="tag">Scraper</span></div>
+          <div class="work-tags"><span class="tag">SaaS</span><span class="tag">Claude Code</span><span class="tag">Supabase</span><span class="tag">Scraper</span></div>
           <h3>Sololander</h3>
           <p data-i18n="work1_p">SaaS que arma páginas de producto en Shopify a partir de un link de AliExpress. Scraper anti-bot, base de datos y flujos automáticos que hacen el trabajo pesado.</p>
-          <a class="work-link" href="https://sololander.com" target="_blank" rel="noopener"><span data-i18n="work_visit">Ver sitio</span> <span aria-hidden="true">→</span></a>
+          <div class="work-links">
+            <a class="work-link" href="https://sololander.com" target="_blank" rel="noopener"><span data-i18n="work_visit">Ver sitio</span> <span aria-hidden="true">→</span></a>
+            <a class="work-link" href="#caso"><span data-i18n="work_how">Cómo lo construí</span> <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
       </article>
       <article class="work">
@@ -614,6 +670,45 @@ section{position:relative}
           <a class="work-link js-wa" href="#"><span aria-hidden="true">▷</span> <span data-i18n="work3_link">Pídeme el demo</span></a>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="caso" class="sec-pad" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow muted">// <span data-i18n="case_eyebrow">Caso · Sololander</span></span>
+      <h2 data-i18n="case_h2">Un SaaS completo, construido por una persona con IA.</h2>
+      <p data-i18n="case_p">Sololander toma el link de un producto de AliExpress y entrega una página de producto en Shopify lista para vender. Lo diseñé, lo programé y lo mantengo en producción yo solo, con Claude Code como entorno principal. Así se ve por dentro.</p>
+    </div>
+    <div class="case-grid">
+      <div class="arch">
+        <div class="arch-top"><span class="arch-live" aria-hidden="true"></span><span data-i18n="arch_top">arquitectura · en producción</span><a class="arch-site" href="https://sololander.com" target="_blank" rel="noopener">sololander.com ↗</a></div>
+        <ol class="arch-list">
+          <li class="arch-layer"><span class="arch-node">01</span><div><h3 data-i18n="arch1_h">Tienda del merchant</h3><p data-i18n="arch1_p">App de Shopify que instala el tema y publica la página de producto.</p><div class="arch-chips"><span class="tag">Shopify App</span><span class="tag">Admin GraphQL</span><span class="tag">Liquid</span></div></div></li>
+          <li class="arch-layer"><span class="arch-node">02</span><div><h3 data-i18n="arch2_h">Dashboard</h3><p data-i18n="arch2_p">Donde el merchant pega el link, edita el contenido y gestiona su plan.</p><div class="arch-chips"><span class="tag">React 19</span><span class="tag">TypeScript</span><span class="tag">TanStack Start</span><span class="tag">Cloudflare Workers</span><span class="tag">Supabase</span></div></div></li>
+          <li class="arch-layer"><span class="arch-node">03</span><div><h3 data-i18n="arch3_h">Backend</h3><p data-i18n="arch3_p">Orquesta cada generación: extrae el producto, escribe el contenido y lo sube a la tienda.</p><div class="arch-chips"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">SQLite</span><span class="tag">VPS</span></div></div></li>
+          <li class="arch-layer"><span class="arch-node">04</span><div><h3 data-i18n="arch4_h">Datos y alertas</h3><p data-i18n="arch4_p">Scraper que esquiva bloqueos anti-bot, contenido escrito con LLMs y avisos en tiempo real ante pagos o fallas.</p><div class="arch-chips"><span class="tag">Scraper</span><span class="tag">Claude</span><span class="tag">n8n</span><span class="tag">Telegram</span></div></div></li>
+        </ol>
+      </div>
+      <div class="case-stats">
+        <div class="stat hl"><em>node:test · vitest</em><b>+3.600</b><span data-i18n="stat1">pruebas automatizadas</span></div>
+        <div class="stat"><em>playwright · e2e</em><b>26</b><span data-i18n="stat2">verificadores de QA con navegador real</span></div>
+        <div class="stat"><em>full-stack</em><b>1</b><span data-i18n="stat3">persona, de la arquitectura al despliegue</span></div>
+        <div class="stat"><em>i18n</em><b>ES<i>·</i>EN</b><span data-i18n="stat4">producto bilingüe de punta a punta</span></div>
+      </div>
+    </div>
+    <div class="method">
+      <div class="method-head">
+        <h3 data-i18n="method_h">Mi método: <span class="hl">velocidad de IA,</span> disciplina de ingeniería.</h3>
+        <span class="method-note" data-i18n="method_note">vibe coding, con pruebas</span>
+      </div>
+      <div class="method-grid">
+        <div class="m-step"><span class="m-num">01</span><h4 data-i18n="m1_h">Plan antes que código</h4><p data-i18n="m1_p">Cada tarea grande parte con un plan escrito: qué cambia, cómo sabré que funciona y qué observación lo pondría en rojo.</p></div>
+        <div class="m-step"><span class="m-num">02</span><h4 data-i18n="m2_h">Agentes en paralelo</h4><p data-i18n="m2_p">Claude Code con skills, subagentes, hooks y servidores MCP. Los agentes implementan; yo dirijo, reviso y decido.</p></div>
+        <div class="m-step"><span class="m-num">03</span><h4 data-i18n="m3_h">Verificar, no suponer</h4><p data-i18n="m3_p">Pruebas automatizadas, verificadores con navegador real y pruebas de mutación: rompo el código a propósito para confirmar que las pruebas lo detectan.</p></div>
+        <div class="m-step"><span class="m-num">04</span><h4 data-i18n="m4_h">A producción sin miedo</h4><p data-i18n="m4_p">El backend se despliega solo al hacer push, y un control bloquea la landing si su velocidad de carga empeora.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -729,7 +824,7 @@ section{position:relative}
 
 <script>
 (function(){
-  var WA_BASE="https://wa.me/56961238295";
+  var WA_BASE="https://wa.me/56947750601";
   var I18N={
     es:{}, // ES vive en el HTML por defecto
     en:{
@@ -738,7 +833,7 @@ section{position:relative}
       hero_h1:'Whatever your business needs, <span class="hl">I build it with AI.</span>',
       hero_sub:"I sit down with you, learn how your business really works, and together we find the concrete solution (a website, store or automation) that <b>saves you hours and brings in more customers.</b>",
       hero_cta1:"Let's talk",hero_cta2:"See my work",
-      proof1:"Maker of Sololander.com · 30+ n8n automations of my own",proof2:"n8n · AI · APIs in production",proof3:"Santiago, Chile · working worldwide",
+      proof1:"Maker of Sololander.com · 30+ n8n automations of my own",proof2:"Claude Code · n8n · APIs in production",proof3:"Santiago, Chile · working worldwide",
       flow_name:"example · automation",flow_f2:"manual steps",flow_f3:"on autopilot",
       n_upload:"Upload a photo",n_process:"processes & generates",n_img:"Image +HD",n_video:"360° video",n_mail:"To your inbox",n_done:"delivered ✓",
       serv_h2:"Four ways to take work off your plate.",serv_p:"All hand-built and AI-powered. We start with whatever hurts most.",serv_flag:"My specialty",
@@ -772,7 +867,21 @@ section{position:relative}
       cta_eyebrow:"Let's start",cta_h2:"What's the one task you'd love to never do again?",cta_p:"Tell me what you need. I'll get back to you fast and show you, no strings attached, how to solve it with AI for your business.",
       cta_mail:"or email me at",
       footer_tag:"I build digital solutions with AI from Santiago, Chile — for small businesses that want to automate and sell better.",
-      footer_mail:"Email",footer_nav:"Navigate",footer_made:"Hand-built, AI-powered · Santiago, CL"
+      footer_mail:"Email",footer_nav:"Navigate",footer_made:"Hand-built, AI-powered · Santiago, CL",
+      work_how:"How I built it",
+      case_eyebrow:"Case study · Sololander",case_h2:"A full SaaS, built by one person with AI.",
+      case_p:"Sololander takes an AliExpress product link and delivers a ready-to-sell Shopify product page. I designed it, coded it and run it in production on my own, with Claude Code as my main environment. Here's what it looks like inside.",
+      arch_top:"architecture · in production",
+      arch1_h:"Merchant's store",arch1_p:"Shopify app that installs the theme and publishes the product page.",
+      arch2_h:"Dashboard",arch2_p:"Where the merchant pastes the link, edits the content and manages their plan.",
+      arch3_h:"Backend",arch3_p:"Orchestrates every run: pulls the product, writes the content and pushes it to the store.",
+      arch4_h:"Data & alerts",arch4_p:"A scraper that gets past anti-bot blocks, LLM-written content and real-time alerts on payments or failures.",
+      stat1:"automated tests",stat2:"QA checkers driving a real browser",stat3:"person, from architecture to deploy",stat4:"bilingual product, end to end",
+      method_h:'My method: <span class="hl">AI speed,</span> engineering discipline.',method_note:"vibe coding, with tests",
+      m1_h:"Plan before code",m1_p:"Every big task starts with a written plan: what changes, how I'll know it works, and what observation would prove it broken.",
+      m2_h:"Agents in parallel",m2_p:"Claude Code with skills, subagents, hooks and MCP servers. The agents implement; I direct, review and decide.",
+      m3_h:"Verify, don't assume",m3_p:"Automated tests, real-browser checkers and mutation testing: I break the code on purpose to confirm the tests catch it.",
+      m4_h:"Ship without fear",m4_p:"The backend deploys itself on push, and a gate blocks the landing page if its load speed gets worse."
     }
   };
   var META={es:{title:document.title,desc:"Consultor de Inteligencia Artificial y Automatización para pymes: agentes de IA, flujos en n8n, páginas web y tiendas online, integración de APIs y fotos de producto con IA. Trabajas directo con Charly. Chile y remoto."},

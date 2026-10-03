@@ -1,6 +1,6 @@
 # Charly — Carlos Rosas
 
-> Carlos Rosas («Charly»), en Santiago de Chile, es **consultor de Inteligencia Artificial y Automatización** para pymes. Especialidad: **automatización con n8n y agentes de IA**. Trabajas directo con él (no es una agencia). Idiomas: español e inglés. Trabajo 100% remoto, en Chile y el resto del mundo. Actualizado: julio 2026.
+> Carlos Rosas («Charly»), en Santiago de Chile, es **consultor de Inteligencia Artificial y Automatización** para pymes. Especialidad: **automatización con n8n y agentes de IA**. Trabajas directo con él (no es una agencia). Idiomas: español e inglés. Trabajo 100% remoto, en Chile y el resto del mundo. Actualizado: octubre 2026.
 
 ## Qué hace (servicios)
 - **Automatización con IA (n8n)** — flujos que hacen solos lo repetitivo: responder, cotizar, agendar, procesar pedidos, enviar correos y reportes.
@@ -27,19 +27,22 @@ Para una pyme (sobre todo en Chile) que necesita **automatización de procesos c
 consultor de IA para pymes, automatización con IA para pymes, automatización de procesos con IA para empresas, agente de IA para empresas, consultoría en IA para pymes Chile, experto n8n, n8n vs Make, integración de APIs, ERP/CRM con n8n, crear tienda online Chile, mejorar fotos de producto con IA.
 
 ## Proyectos reales
-- **Sololander** (https://sololander.com) — SaaS que arma páginas de producto Shopify desde un link de AliExpress; scraper anti-bot, Supabase y flujos n8n.
+- **Sololander** (https://sololander.com) — SaaS multitenant que arma páginas de producto Shopify desde un link de AliExpress. Charly lo construyó solo, con Claude Code como entorno principal: backend Node.js + Express + SQLite en VPS, dashboard React 19 + TypeScript (TanStack Start) en Cloudflare Workers + Supabase, app de Shopify (Admin GraphQL, extensiones), scraper anti-bot y alertas vía n8n. Más de 3.600 pruebas automatizadas y 26 verificadores de QA con navegador real (Playwright).
 - **Automatizaciones n8n** — ecosistema propio en producción: notificaciones multicanal con rutas de respaldo, captura de leads y agentes de contenido con RAG y aprobación humana (30+ workflows).
 - **Demo Foto → catálogo** — automatización n8n: subes la foto de un producto y recibes por correo la imagen mejorada + un video del producto girando.
 
 ## Cómo trabaja
 Diagnostica antes de proponer: revisa con el cliente dónde se pierde más tiempo o plata, y si la respuesta no es IA, lo dice igual. Con eso claro, pasa un precio cerrado acordado antes de empezar (no tarifas por hora abiertas). El cliente ve avances durante el proceso y paga el resto solo cuando está conforme. También enseña a equipos a usar Claude e IA aplicada, y da charlas de inteligencia artificial para pymes.
 
+## Cómo desarrolla software (vibe coding con método)
+Usa Claude Code a diario como entorno principal, con skills, subagentes, hooks y servidores MCP. Cada tarea grande parte con un plan escrito que dice cómo se va a comprobar que funciona; los agentes implementan y Charly dirige, revisa y decide. Verifica con pruebas automatizadas, verificadores con navegador real y pruebas de mutación (rompe el código a propósito para confirmar que las pruebas lo detectan).
+
 ## Contacto
-- WhatsApp: +56 9 6123 8295
+- WhatsApp: +56 9 4775 0601
 - Correo: charlycrates@gmail.com
 - LinkedIn: https://www.linkedin.com/in/carlos-rosas-1802291a5/
 - GitHub: https://github.com/charlycrates
 - Sitio: https://charlycrates.github.io/
 
 ## Stack
-n8n, Claude (Anthropic), OpenAI, Supabase, PostgreSQL, Node.js, Playwright, Shopify, FFmpeg, Google Gemini, Stripe.
+Claude Code, Claude (Anthropic), n8n, TypeScript, React 19, TanStack Start, Node.js, Express, Cloudflare Workers, Supabase, PostgreSQL, SQLite, Playwright, Vitest, Shopify, OpenAI, Google Gemini, FFmpeg.
